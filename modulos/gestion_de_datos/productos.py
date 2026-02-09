@@ -10,7 +10,7 @@ archivo_productos = 'producto.json'
 def cargar_productos():
     if os.path.exists(archivo_productos) and os.path.getsize(archivo_productos) > 0:
         with open(archivo_productos, 'r', encoding='utf-8') as f:
-            return json. load(f)
+           return json. load(f)
     return {}
 
 productos = cargar_productos()
@@ -86,6 +86,7 @@ def eliminar_producto():
             print("Eliminación cancelada.")
     else:
         print("Código no encontrado.")
+
 
 
 agregar_productos()

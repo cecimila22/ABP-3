@@ -22,5 +22,21 @@
         "gerencia": "Gobierno",
         "ventas": {},
         "metas": {}
+    },
+    "Vend004": {
+        "codigo_vendedor": "Vend004",
+        "nombre_completo": "Joaquin Perez",
+        "run_vendedor": "15.876.234-6",
+        "gerencia": "GOBIERNO",
+        "ventas": {},
+        "metas": {}
+    },
+    "Vend005": {
+        "codigo_vendedor": "Vend005",
+        "nombre_completo": "Joaquin Perez",
+        "run_vendedor": "15.876.234-6",
+        "gerencia": "GOBIERNO",
+        "ventas": {},
+        "metas": {}
     }
 }

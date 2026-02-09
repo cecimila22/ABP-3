@@ -8,17 +8,25 @@
         "costo": 4876.0,
         "cantidad": 15,
         "ubicacion": "i32"
-    }
-}
-{
+    },
     "Prod002": {
         "codigo_producto": "Prod002",
         "proveedor": "Importaciones MC SPA",
         "tipo": "Impresora",
         "marca": "HP",
-        "modelo": "HP5643",
+        "modelo": "HP5649",
         "costo": 4876.0,
         "cantidad": 10,
         "ubicacion": "i49"
+    },
+    "Prod003": {
+        "codigo_producto": "Prod003",
+        "proveedor": "Mueble Rori Spa",
+        "tipo": "74.001.223-3",
+        "marca": "rosen",
+        "modelo": "mesa 234",
+        "costo": 1234.0,
+        "cantidad": 10,
+        "ubicacion": "j76"
     }
 }

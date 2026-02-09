@@ -34,5 +34,17 @@
             "comuna": "San Joaquin",
             "ciudad": "Santiago"
         }
+    },
+    "Prov004": {
+        "codigo_proveedor": "Prov004",
+        "razon_social": "Muebles Hardy Spa",
+        "rut": "77.876.345-9",
+        "telefono": 56225567432,
+        "direccion": {
+            "calle": "rela",
+            "numero": "23",
+            "comuna": "Puente Alto",
+            "ciudad": "Santiago"
+        }
     }
 }
