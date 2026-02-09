@@ -46,5 +46,17 @@
             "comuna": "Puente Alto",
             "ciudad": "Santiago"
         }
+    },
+    "Prov005": {
+        "codigo_proveedor": "Prov005",
+        "razon_social": "Papeleria ABC Spa",
+        "rut": "65.345.765-8",
+        "telefono": 56234569876,
+        "direccion": {
+            "calle": "Londres",
+            "numero": "65",
+            "comuna": "Ñuñoa",
+            "ciudad": "Santiago"
+        }
     }
 }

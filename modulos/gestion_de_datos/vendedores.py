@@ -7,7 +7,7 @@ import os
 ######### VENDEDORES #########
 archivo_vendedores = 'vendedor.json'
 
-### Aquí se cargan los productos existentes desde el JSON al iniciar para no perder datos
+### Aquí se cargan los vendedores existentes desde el JSON al iniciar para no perder datos
 def cargar_vendedores():
     if os.path.exists(archivo_vendedores) and os.path.getsize(archivo_vendedores) > 0:
         with open(archivo_vendedores, 'r', encoding='utf-8') as f:
@@ -87,6 +87,3 @@ def eliminar_vendedor():
         print("Código no encontrado")
 
 
-agregar_vendedor()
-mostrar_vendedores()
-eliminar_vendedor()

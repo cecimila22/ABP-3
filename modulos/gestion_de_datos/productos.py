@@ -5,6 +5,7 @@ import os
 
 ######### PRODUCTOS #########
 archivo_productos = 'producto.json'
+archivo_stock ='stock.json'
 
 ### Aquí se cargan los productos existentes desde el JSON al iniciar para no perder datos
 def cargar_productos():
@@ -16,6 +17,8 @@ def cargar_productos():
 productos = cargar_productos()
 
 def generar_codigo_producto(proveedor, tipo, marca, modelo, costo, cantidad, ubicacion):
+    global codigo_producto
+
     contador_actual_producto = len(productos) + 1
     codigo_producto = f"Prod{contador_actual_producto:03d}"
 
@@ -24,6 +27,8 @@ def generar_codigo_producto(proveedor, tipo, marca, modelo, costo, cantidad, ubi
         contador_actual_producto += 1
         codigo_producto = f"Prod{contador_actual_producto:03d}"
     
+        print("Código de producto generado: ", codigo_producto)
+
     productos[codigo_producto] = {
         "codigo_producto" : codigo_producto,
         "proveedor": proveedor,
@@ -33,9 +38,7 @@ def generar_codigo_producto(proveedor, tipo, marca, modelo, costo, cantidad, ubi
         "costo": costo,
         "cantidad": cantidad,
         "ubicacion": ubicacion
-    }
-    
-    print("Producto generado: {codigo_producto}")
+    }    
 
 ### Aquí se ingresa el producto (Esto lo hace Compras)
 def agregar_productos():
@@ -54,12 +57,29 @@ def agregar_productos():
         json.dump(productos, f, indent=4, ensure_ascii=False)
     print("Producto agregado con éxito")    
 
+    cargar_stock()
+  
+    #Aqui guardo el ingreso de los productos en stock en un archivo .jason para facilitar los reportes
+    with open(archivo_stock, 'w', encoding='utf-8') as f:
+        json.dump(productos, f, indent=4, ensure_ascii=False)
+    print("Producto agregado a stock con éxito")      
 
+def cargar_stock():
+    if os.path.exists(archivo_stock) and os.path.getsize(archivo_stock) > 0:
+        with open(archivo_stock, 'r', encoding='utf-8') as f:
+            return json. load(f)
+    return {}
+
+    
+
+stock = cargar_stock
+
+   
 ### Aquí se muestran los productos ingresados
 def mostrar_productos():
     datos = cargar_productos()
     if not datos:
-        print("No hay información de productos.")
+        print("No hay información de productos")
         return
 
     for cod, info in datos.items():
@@ -70,7 +90,7 @@ def eliminar_producto():
     global productos # Usamos el diccionario global
 
     if not productos:
-            print("No hay información de productos.")
+            print("No hay información de productos")
             return
                 
     codigo = input("Ingrese el código del producto a eliminar (ej. Prod001): ")
@@ -81,14 +101,10 @@ def eliminar_producto():
             del productos[codigo]
             with open(archivo_productos, 'w', encoding='utf-8') as f:
                 json.dump(productos, f, indent=4, ensure_ascii=False)
-                print("Producto eliminado.")
+                print("Producto eliminado")
         else:
-            print("Eliminación cancelada.")
+            print("Eliminación cancelada")
     else:
-        print("Código no encontrado.")
+        print("Código no encontrado")
 
 
-
-agregar_productos()
-mostrar_productos()
-eliminar_producto()

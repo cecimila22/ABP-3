@@ -1,0 +1,16 @@
+{
+    "Vent001": {
+        "codigo_vendedor": "Vend002",
+        "fecha_de_ingreso_de_venta": "2026-02-09",
+        "mes_de_venta": "Prod004",
+        "codigo_producto": "Prod004",
+        "cantidad_vendida": 3
+    },
+    "Vent002": {
+        "codigo_vendedor": "Vend002",
+        "fecha_de_ingreso_de_venta": "2026-02-09",
+        "mes_de_venta": "Prod002",
+        "codigo_producto": "Prod002",
+        "cantidad_vendida": 8
+    }
+}

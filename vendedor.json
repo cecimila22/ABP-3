@@ -38,5 +38,21 @@
         "gerencia": "GOBIERNO",
         "ventas": {},
         "metas": {}
+    },
+    "Vend006": {
+        "codigo_vendedor": "Vend006",
+        "nombre_completo": "Ana Pedroza",
+        "run_vendedor": "13.946.765-9",
+        "gerencia": "PYME",
+        "ventas": {},
+        "metas": {}
+    },
+    "Vend007": {
+        "codigo_vendedor": "Vend007",
+        "nombre_completo": "Ana Pedroza",
+        "run_vendedor": "13.946.765-9",
+        "gerencia": "PYME",
+        "ventas": {},
+        "metas": {}
     }
 }

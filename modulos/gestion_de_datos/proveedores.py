@@ -86,7 +86,3 @@ def eliminar_proveedor():
         print("Código no encontrado")
 
 
-
-agregar_proveedor() #Validacion de funciones
-mostrar_proveedores() #Validacion de funciones
-eliminar_proveedor()
