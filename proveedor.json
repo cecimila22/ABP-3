@@ -1,0 +1,38 @@
+{
+    "Prov001": {
+        "codigo_proveedor": "Prov001",
+        "razon_social": "Importaciones MC SPA",
+        "rut": "77.794.374-K",
+        "telefono": 5698765432,
+        "direccion": {
+            "calle": "La gloria",
+            "numero": "43",
+            "comuna": "Las Condes",
+            "ciudad": "Santiago"
+        }
+    },
+    "Prov002": {
+        "codigo_proveedor": "Prov002",
+        "razon_social": "General AC Spa",
+        "rut": "77.794.374-K",
+        "telefono": 5698765432,
+        "direccion": {
+            "calle": "A Fleming",
+            "numero": "3445",
+            "comuna": "Las Condes",
+            "ciudad": "Santiago"
+        }
+    },
+    "Prov003": {
+        "codigo_proveedor": "Prov003",
+        "razon_social": "Muebles Roger SpA",
+        "rut": "75.876.987-4",
+        "telefono": 234560192,
+        "direccion": {
+            "calle": "Mata",
+            "numero": "546",
+            "comuna": "San Joaquin",
+            "ciudad": "Santiago"
+        }
+    }
+}

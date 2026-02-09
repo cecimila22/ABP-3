@@ -1,0 +1,24 @@
+{
+    "Prod001": {
+        "codigo_producto": "Prod001",
+        "proveedor": "Importaciones MC SPA",
+        "tipo": "Impresora",
+        "marca": "HP",
+        "modelo": "HP5643",
+        "costo": 4876.0,
+        "cantidad": 15,
+        "ubicacion": "i32"
+    }
+}
+{
+    "Prod002": {
+        "codigo_producto": "Prod002",
+        "proveedor": "Importaciones MC SPA",
+        "tipo": "Impresora",
+        "marca": "HP",
+        "modelo": "HP5643",
+        "costo": 4876.0,
+        "cantidad": 10,
+        "ubicacion": "i49"
+    }
+}

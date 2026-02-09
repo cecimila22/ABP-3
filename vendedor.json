@@ -1,0 +1,26 @@
+{
+    "Vend001": {
+        "codigo_vendedor": "Vend001",
+        "nombre_completo": "Augusto Perez",
+        "run_vendedor": "26.456.765-K",
+        "gerencia": "Pyme",
+        "ventas": {},
+        "metas": {}
+    },
+    "Vend002": {
+        "codigo_vendedor": "Vend002",
+        "nombre_completo": "Ceci Mila",
+        "run_vendedor": "26.340.453-K",
+        "gerencia": "Masivos",
+        "ventas": {},
+        "metas": {}
+    },
+    "Vend003": {
+        "codigo_vendedor": "Vend003",
+        "nombre_completo": "Ana Lobo",
+        "run_vendedor": "26.345.453-K",
+        "gerencia": "Gobierno",
+        "ventas": {},
+        "metas": {}
+    }
+}
