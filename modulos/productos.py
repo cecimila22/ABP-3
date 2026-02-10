@@ -1,4 +1,4 @@
-from validaciones import pedir_texto, pedir_decimal, pedir_entero
+from gestion_de_datos.validaciones import pedir_texto, pedir_decimal, pedir_entero
 import json
 import os
 

@@ -1,8 +1,8 @@
 import json
 import os
 from datetime import date # Aqui obtenemos la fecha de hoy
-from validaciones import pedir_texto, pedir_entero, pedir_decimal
-from datos_basicos import margen, gerencias, meses
+from gestion_de_datos.validaciones import pedir_texto, pedir_entero, pedir_decimal
+from gestion_de_datos.datos_basicos import margen, gerencias, meses
 ######### METAS #########
 # Aqui se ingresan las metas por gerencia por mes por vendedor Esto lo hace el gerente
 

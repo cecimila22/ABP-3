@@ -1,5 +1,5 @@
-from datos_basicos import margen, gerencias, meses 
-from validaciones import pedir_texto, pedir_rut
+from gestion_de_datos.datos_basicos import margen, gerencias, meses 
+from gestion_de_datos.validaciones import pedir_texto, pedir_rut
 from typing import Dict, List
 import json
 import os

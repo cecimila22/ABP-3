@@ -1,5 +1,4 @@
-
-from datos_basicos import meses,gerencias
+from gestion_de_datos.datos_basicos import meses 
 
 # Validaciones de opciones del menú principal. La M corresponde al Menu
 productosM = 1

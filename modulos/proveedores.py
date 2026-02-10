@@ -1,4 +1,4 @@
-from validaciones import pedir_entero,pedir_texto, pedir_rut
+from gestion_de_datos.validaciones import pedir_entero,pedir_texto, pedir_rut
 import json
 import os
 

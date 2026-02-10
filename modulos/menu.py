@@ -1,12 +1,10 @@
-from validaciones import permisos_menu
+#from gestion_de_datos.validaciones import permisos_menu
 from productos import agregar_productos, mostrar_productos, eliminar_producto
 from proveedores import agregar_proveedor, mostrar_proveedores, eliminar_proveedor
 from vendedores import agregar_vendedor, mostrar_vendedores, eliminar_vendedor
 from metas import ingresar_metas_mes_vendedor, mostrar_metas
 from ventas import ingresar_venta, mostrar_ventas, eliminar_venta
 from inventario import validar_stock, descontar_stock, alertas_stock_bajo
-#from reportes import ventas_por_producto,ventas_por_gerencia,gerencia_producto,ingresos_producto_mes, productos_vendidos_por_vendedor_mes, ranking_productos_ingresos, producto_mas_vendido_anual, cantidad_vendida_por_producto, comparativo_mensual_producto, crecimiento_mensual_producto,productos_sin_ventas
-
 
 #### Menu principal se usa lambda
 menu_principal = [
@@ -15,9 +13,8 @@ menu_principal = [
     [3, "Vendedores", lambda: ejecutar_menu(menu_vendedores)],
     [4, "Metas", lambda: ejecutar_menu(menu_metas)],
     [5, "Ventas", lambda: ejecutar_menu(menu_ventas)],
-    [6, "Reportes", lambda: ejecutar_menu(menu_ventas)],
-    [7, "Inventario", lambda: ejecutar_menu(menu_inventario)],
-    [8, "Salir", None]
+    [6, "Inventario", lambda: ejecutar_menu(menu_inventario)],
+    [7, "Salir", None]
 ]
 
 #### Menu productos
@@ -65,24 +62,7 @@ menu_inventario = [
     [3, "Validar stock bajo:", alertas_stock_bajo],
     [4, "Volver", None]
 ]
-#### Menu reportes
 
-"""
-menu_reportes = [
-    [1, "Reporte de ventas por producto", ventas_por_producto],
-    [2, "Reporte de ventas por gerencia", ventas_por_gerencia],
-    [3, "Reporte de ventas por gerencia, por producto", gerencia_producto],
-    [4, "Reporte de ingresos por producto, por mes", ingresos_producto_mes],
-    [5, "Reporte de productos vendidos por vendedor, por mes", productos_vendidos_por_vendedor_mes],
-    [6, "Reporte de productos con mayor ingreso", ranking_productos_ingresos],
-    [7, "Reporte de producto mas vendido", producto_mas_vendido_anual],
-    [8, "Reporte de cantidad de ventas por producto", cantidad_vendida_por_producto],
-    [9, "Reporte de ventas por producto", comparativo_mensual_producto],
-    [10, "Reporte de productos que no han tenido ventas", productos_sin_ventas],
-    [11, "Reporte de ventas por producto", crecimiento_mensual_producto],
-    [12, "Volver", None]
-]
-"""
 #### Ejecutar menu
 def ejecutar_menu(menu):
     while True:
@@ -107,4 +87,3 @@ def ejecutar_menu(menu):
 
 
 ejecutar_menu(menu_principal)
-
