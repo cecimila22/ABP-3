@@ -60,21 +60,14 @@ def agregar_productos():
     cargar_stock()
   
     #Aqui guardo el ingreso de los productos en stock en un archivo .jason para facilitar los reportes
-    with open(archivo_stock, 'w', encoding='utf-8') as f:
-        json.dump(productos, f, indent=4, ensure_ascii=False)
+    def cargar_stock():
+        with open(archivo_stock, 'w', encoding='utf-8') as f:
+            json.dump(productos, f, indent=4, ensure_ascii=False)
+    
     print("Producto agregado a stock con éxito")      
 
-def cargar_stock():
-    if os.path.exists(archivo_stock) and os.path.getsize(archivo_stock) > 0:
-        with open(archivo_stock, 'r', encoding='utf-8') as f:
-            return json. load(f)
-    return {}
 
-    
-
-stock = cargar_stock
-
-   
+  
 ### Aquí se muestran los productos ingresados
 def mostrar_productos():
     datos = cargar_productos()

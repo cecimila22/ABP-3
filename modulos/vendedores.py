@@ -47,8 +47,6 @@ def agregar_vendedor():
     metas_mes :0
     codigo_vendedor = generar_codigo_vendedor(nombre_completo, run_vendedor, gerencia)
     
-    generar_codigo_vendedor(nombre_completo, run_vendedor, gerencia)
-    
     #Aqui guardo vendedor en el dicionario en un archivo .jason para facilitar los reportes
     with open(archivo_vendedores, 'w', encoding='utf-8') as f:
         json.dump(vendedores, f, indent=4, ensure_ascii=False)

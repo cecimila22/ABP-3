@@ -35,18 +35,6 @@
             "ciudad": "Santiago"
         }
     },
-    "Prov004": {
-        "codigo_proveedor": "Prov004",
-        "razon_social": "Muebles Hardy Spa",
-        "rut": "77.876.345-9",
-        "telefono": 56225567432,
-        "direccion": {
-            "calle": "rela",
-            "numero": "23",
-            "comuna": "Puente Alto",
-            "ciudad": "Santiago"
-        }
-    },
     "Prov005": {
         "codigo_proveedor": "Prov005",
         "razon_social": "Papeleria ABC Spa",
@@ -56,6 +44,30 @@
             "calle": "Londres",
             "numero": "65",
             "comuna": "Ñuñoa",
+            "ciudad": "Santiago"
+        }
+    },
+    "Prov006": {
+        "codigo_proveedor": "Prov006",
+        "razon_social": "Muebles ARV Spa",
+        "rut": "75.456.987-4",
+        "telefono": 56235601734,
+        "direccion": {
+            "calle": "Jose",
+            "numero": "87",
+            "comuna": "La Reina",
+            "ciudad": "Santiago"
+        }
+    },
+    "Prov007": {
+        "codigo_proveedor": "Prov007",
+        "razon_social": "Muebles Constantino Spa",
+        "rut": "74.783.673-4",
+        "telefono": 56283764534,
+        "direccion": {
+            "calle": "Presidente",
+            "numero": "456",
+            "comuna": "Santiago",
             "ciudad": "Santiago"
         }
     }

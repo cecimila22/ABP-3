@@ -15,14 +15,6 @@
         "ventas": {},
         "metas": {}
     },
-    "Vend003": {
-        "codigo_vendedor": "Vend003",
-        "nombre_completo": "Ana Lobo",
-        "run_vendedor": "26.345.453-K",
-        "gerencia": "Gobierno",
-        "ventas": {},
-        "metas": {}
-    },
     "Vend004": {
         "codigo_vendedor": "Vend004",
         "nombre_completo": "Joaquin Perez",
@@ -52,6 +44,22 @@
         "nombre_completo": "Ana Pedroza",
         "run_vendedor": "13.946.765-9",
         "gerencia": "PYME",
+        "ventas": {},
+        "metas": {}
+    },
+    "Vend008": {
+        "codigo_vendedor": "Vend008",
+        "nombre_completo": "Josefa Gonzalez",
+        "run_vendedor": "13.765.987-4",
+        "gerencia": "GOBIERNO",
+        "ventas": {},
+        "metas": {}
+    },
+    "Vend009": {
+        "codigo_vendedor": "Vend009",
+        "nombre_completo": "Josefa Gonzalez",
+        "run_vendedor": "13.765.987-4",
+        "gerencia": "GOBIERNO",
         "ventas": {},
         "metas": {}
     }

@@ -118,5 +118,15 @@
         "costo": 51.0,
         "cantidad": 3,
         "ubicacion": "F54"
+    },
+    "Prod013": {
+        "codigo_producto": "Prod013",
+        "proveedor": "Importadora ERT Spa",
+        "tipo": "Impresora",
+        "marca": "Epson",
+        "modelo": "Epson 654",
+        "costo": 110.0,
+        "cantidad": 10,
+        "ubicacion": "b4"
     }
 }

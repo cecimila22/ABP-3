@@ -29,16 +29,6 @@
         "cantidad": 10,
         "ubicacion": "j76"
     },
-    "Prod004": {
-        "codigo_producto": "Prod004",
-        "proveedor": "Celulares Exito Spa",
-        "tipo": "Celular",
-        "marca": "Motorolla",
-        "modelo": "Moto654",
-        "costo": 124.0,
-        "cantidad": 40,
-        "ubicacion": "s33"
-    },
     "Prod005": {
         "codigo_producto": "Prod005",
         "proveedor": "Articulos de oficina Spa",
@@ -118,5 +108,15 @@
         "costo": 51.0,
         "cantidad": 3,
         "ubicacion": "F54"
+    },
+    "Prod013": {
+        "codigo_producto": "Prod013",
+        "proveedor": "Importadora ERT Spa",
+        "tipo": "Impresora",
+        "marca": "Epson",
+        "modelo": "Epson 654",
+        "costo": 110.0,
+        "cantidad": 10,
+        "ubicacion": "b4"
     }
 }

@@ -28,8 +28,9 @@ menu_productos = [
 #### Menu proveedores
 menu_proveedores = [
     [1, "Agregar proveedores", agregar_proveedor],
+
     [2, "Mostrar proveedores", mostrar_proveedores],
-    [3, "Eliminar producto", eliminar_proveedor],
+    [3, "Eliminar proveedores", eliminar_proveedor],
     [4, "Volver", None]
 ]
 
@@ -59,7 +60,7 @@ menu_ventas = [
 menu_inventario = [
     [1, "Validar stock", validar_stock],
     [2, "Descontar_stock", descontar_stock],
-    [3, "Validar stock bajo:", alertas_stock_bajo],
+    [3, "Validar stock bajo", alertas_stock_bajo],
     [4, "Volver", None]
 ]
 

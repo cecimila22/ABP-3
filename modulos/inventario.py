@@ -1,29 +1,29 @@
 from productos import productos
+import json
+import os
 
 ######### INVENTARIO #########
-stock_minimo = 3
+stock_minimo = 2
+archivo_stock ='stock.json'
 
 # Aquí validamos el stock 
-def validar_stock(codigo_producto, cantidad_vendida):
-    if codigo_producto not in productos:
-        print("Producto no existe.")
-        return False
+def mostrar_stock():
+    if os.path.exists(archivo_stock) and os.path.getsize(archivo_stock) > 0:
+        with open(archivo_stock, 'r', encoding='utf-8') as f:
+           return json. load(f)
+    
+    with open(archivo_stock, "r", encoding="utf-8") as archivo:  
+        datos = json.load(archivo)
 
-    if cantidad_vendida <= 0:
-        print("La cantidad debe ser mayor a cero.")
-        return False
+    for cod, info in datos:
+        print(f"ID: {cod} | {info['tipo']} {info['marca']} - Stock: {info['cantidad']}")
 
-    stock_disponible = productos[codigo_producto]["cantidad"]
-
-    if cantidad_vendida > stock_disponible:
-        print("Stock insuficiente.")
-        return False
-
-    return True    
+   
+# print (f"El stock disponible del producto ,, "es" , cantidad)
 
 # Aquí descontamos el stock
 def descontar_stock(codigo_producto, cantidad_vendida):
-    if not validar_stock(codigo_producto, cantidad_vendida):
+    if not productos(codigo_producto, cantidad_vendida):
         return False
 
     productos[codigo_producto]["cantidad"] -= cantidad_vendida
@@ -44,6 +44,4 @@ def alertas_stock_bajo():
             hay_alertas = True
 
     if not hay_alertas:
-        print("No hay productos con stock bajo.")
-
-
+        print("No hay productos con stock bajo")
