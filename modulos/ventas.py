@@ -58,6 +58,9 @@ def ingresar_venta():
     with open(archivo_vendedor, 'r', encoding='utf-8') as f:
         datos_cargados_vendedor = json. load(f)
     
+    with open(archivo_productos, 'r', encoding='utf-8') as f:
+        datos_cargados_producto = json. load(f)
+
     while True:
         codigo_vendedor = pedir_texto("Ingrese el código del vendedor: ")
         if codigo_vendedor in datos_cargados_vendedor:
@@ -75,7 +78,7 @@ def ingresar_venta():
               
     while True:
         codigo_producto = pedir_texto("Ingrese el código del producto vendido: ")
-        if codigo_vendedor in datos_cargados_vendedor:
+        if codigo_producto in datos_cargados_producto:
             break
         else:
             print("Codigo de producto no encontrado, intente de nuevo")

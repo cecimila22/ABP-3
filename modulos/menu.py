@@ -4,7 +4,7 @@ from proveedores import agregar_proveedor, mostrar_proveedores, eliminar_proveed
 from vendedores import agregar_vendedor, mostrar_vendedores, eliminar_vendedor
 from metas import ingresar_metas_mes_vendedor, mostrar_metas
 from ventas import ingresar_venta, mostrar_ventas, eliminar_venta
-from inventario import validar_stock, descontar_stock, alertas_stock_bajo
+from inventario import mostrar_stock, alertas_stock_bajo
 
 #### Menu principal se usa lambda
 menu_principal = [
@@ -58,10 +58,9 @@ menu_ventas = [
 ]
 #### Menu inventario
 menu_inventario = [
-    [1, "Validar stock", validar_stock],
-    [2, "Descontar_stock", descontar_stock],
-    [3, "Validar stock bajo", alertas_stock_bajo],
-    [4, "Volver", None]
+    [1, "Mostrar stock", mostrar_stock],
+    [2, "Validar stock bajo", alertas_stock_bajo],
+    [3, "Volver", None]
 ]
 
 #### Ejecutar menu

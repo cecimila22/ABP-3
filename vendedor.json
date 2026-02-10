@@ -62,5 +62,13 @@
         "gerencia": "GOBIERNO",
         "ventas": {},
         "metas": {}
+    },
+    "Vend010": {
+        "codigo_vendedor": "Vend010",
+        "nombre_completo": "Ana Mila",
+        "run_vendedor": "26.263.891-K",
+        "gerencia": "MASIVOS",
+        "ventas": {},
+        "metas": {}
     }
 }

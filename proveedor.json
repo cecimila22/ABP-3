@@ -70,5 +70,17 @@
             "comuna": "Santiago",
             "ciudad": "Santiago"
         }
+    },
+    "Prov008": {
+        "codigo_proveedor": "Prov008",
+        "razon_social": "Magic colors",
+        "rut": "77.876.499-6",
+        "telefono": 56988773432,
+        "direccion": {
+            "calle": "Presidente",
+            "numero": "34",
+            "comuna": "Las condes",
+            "ciudad": "Santiago"
+        }
     }
 }

@@ -19,5 +19,12 @@
         "mes_de_venta": "Prod007",
         "codigo_producto": "Prod007",
         "cantidad_vendida": 20
+    },
+    "Vent004": {
+        "codigo_vendedor": "Vend010",
+        "fecha_de_ingreso_de_venta": "2026-02-09",
+        "mes_de_venta": "Prod001",
+        "codigo_producto": "Prod001",
+        "cantidad_vendida": 20
     }
 }

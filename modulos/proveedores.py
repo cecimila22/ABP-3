@@ -20,7 +20,7 @@ def generar_codigo_proveedor(razon_social,rut,telefono,direccion):
  ### Aquí validamos si el codigo de producto existe, para no sobreescribir
     while codigo_proveedor in proveedores:
         contador_actual_proveedor += 1
-        codigo_proveedor = f"Prod{contador_actual_proveedor:03d}"
+        codigo_proveedor = f"Prov{contador_actual_proveedor:03d}"
 
     proveedores[codigo_proveedor] = {
         "codigo_proveedor" : codigo_proveedor,

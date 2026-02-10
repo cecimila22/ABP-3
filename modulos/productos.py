@@ -57,7 +57,7 @@ def agregar_productos():
         json.dump(productos, f, indent=4, ensure_ascii=False)
     print("Producto agregado con éxito")    
 
-    cargar_stock()
+
   
     #Aqui guardo el ingreso de los productos en stock en un archivo .jason para facilitar los reportes
     def cargar_stock():
@@ -65,7 +65,8 @@ def agregar_productos():
             json.dump(productos, f, indent=4, ensure_ascii=False)
     
     print("Producto agregado a stock con éxito")      
-
+    
+    cargar_stock()
 
   
 ### Aquí se muestran los productos ingresados
